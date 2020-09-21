@@ -7,7 +7,7 @@ INNER JOIN Orders AS o ON c.CustomerID = o.CustomerID
 INNER JOIN OrderDetails AS od ON o.OrderID = od.OrderID
 WHERE YEAR(o.OrderDate) = 2016
 GROUP BY c.CustomerID, c.CompanyName, o.OrderID
-HAVING amount >= 1000
+HAVING amount >= 10000
 ORDER BY amount DESC;
 
 /* Exercise 33 */
